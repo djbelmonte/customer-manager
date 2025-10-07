@@ -30,3 +30,14 @@ Setup:
 The app should look like this:
 
 <img width="1917" height="950" alt="image" src="https://github.com/user-attachments/assets/66567fa7-4e8b-46f7-8349-7749a337b478" />
+
+
+From here, you should be able to test the features including creating customers, updating the details and removing them.
+
+Some restrictions:
+- Only English letters, hyphen, apostrophe and spaces are allowed in the customer's name
+- Phone number must be a valid one. This has a basic validation to be in between 10-15 digits which is the common phone number in the world and may start with a +
+- Birthday must be a valid date and should not be later than the present date
+
+
+Thank you. Enjoy!
