@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_10_07_082957) do
+ActiveRecord::Schema[8.0].define(version: 2025_10_07_083919) do
   create_table "customers", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.date "birthday"
-    t.string "phone_number"
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.date "birthday", null: false
+    t.string "phone_number", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
