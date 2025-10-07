@@ -18,7 +18,7 @@ class CustomersTest < ApplicationSystemTestCase
     fill_in "First name", with: @customer.first_name
     fill_in "Last name", with: @customer.last_name
     fill_in "Phone number", with: @customer.phone_number
-    click_on "Create Customer"
+    click_on "Save"
 
     assert_text "Customer was successfully created"
     click_on "Back"
@@ -32,7 +32,7 @@ class CustomersTest < ApplicationSystemTestCase
     fill_in "First name", with: @customer.first_name
     fill_in "Last name", with: @customer.last_name
     fill_in "Phone number", with: @customer.phone_number
-    click_on "Update Customer"
+    click_on "Save"
 
     assert_text "Customer was successfully updated"
     click_on "Back"
@@ -40,7 +40,10 @@ class CustomersTest < ApplicationSystemTestCase
 
   test "should destroy Customer" do
     visit customer_url(@customer)
-    click_on "Destroy this customer", match: :first
+
+    accept_confirm do
+      click_on "Destroy this customer"
+    end
 
     assert_text "Customer was successfully destroyed"
   end
