@@ -4,10 +4,10 @@ one:
   first_name: MyString
   last_name: MyString
   birthday: 2025-10-07
-  phone_number: MyString
+  phone_number: 09204049610
 
 two:
   first_name: MyString
   last_name: MyString
   birthday: 2025-10-07
-  phone_number: MyString
+  phone_number: 09760000722
